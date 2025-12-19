@@ -3,158 +3,141 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Avion&nbsp;&mdash; мебель будущего</title>
-  <link rel="icon" type="image/x-icon" href="assets/Лого.png">
+  <title>Avion — мебель будущего</title>
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
-  <header>
-    <div>
-      <h1>Avion</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Plant pots</a></li>
-          <li><a href="#">Ceramics</a></li>
-          <li><a href="#">Tables</a></li>
-          <li><a href="#">Chairs</a></li>
-          <li><a href="#">Crockery</a></li>
-          <li><a href="#">Tableware</a></li>
-          <li><a href="#">Cutlery</a></li>
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__logo">Avion</h1>
+
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#products">Products</a></li>
+          <li class="nav__item"><a class="nav__link" href="#benefits">Benefits</a></li>
+          <li class="nav__item"><a class="nav__link" href="#popular">Popular</a></li>
+          <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main class="main">
 
-    <section>
-      <h2>Мебель будущего с&nbsp;современным дизайном</h2>
-      <p>Новая эра экологичной мебели от&nbsp;Avion&nbsp;&mdash; французского бренда премиум‑класса.</p>
-      <a href="#">Посмотреть коллекцию</a>
+    <section class="hero" id="hero">
+      <h2 class="hero__title">Мебель будущего с&nbsp;современным дизайном</h2>
+      <p class="hero__text">Новая эра экологичной мебели от&nbsp;Avion&nbsp;&mdash; французского бренда премиум-класса.</p>
+      <a href="#products" class="button button--primary">Посмотреть коллекцию</a>
     </section>
 
-    <section>
-      <h2>Что делает наш бренд особенным</h2>
-      <ul>
-        <li>
-          <h3>Доставка на&nbsp;следующий день</h3>
-          <p>Закажите до&nbsp;15:00 и&nbsp;получите заказ уже завтра.</p>
+    <section class="benefits" id="benefits">
+      <h2 class="benefits__title">Что делает наш бренд особенным</h2>
+
+      <ul class="benefits__list">
+        <li class="benefits__item">
+          <h3 class="benefits__item-title">Доставка на&nbsp;следующий день</h3>
+          <p class="benefits__item-text">Закажите до&nbsp;15:00 и&nbsp;получите заказ уже завтра.</p>
         </li>
-        <li>
-          <h3>Переработанная упаковка</h3>
-          <p>Мы&nbsp;используем 100% переработанные материалы.</p>
+        <li class="benefits__item">
+          <h3 class="benefits__item-title">Переработанная упаковка</h3>
+          <p class="benefits__item-text">Мы&nbsp;используем 100&nbsp;% переработанные материалы.</p>
         </li>
-        <li>
-          <h3>Лучшие цены</h3>
-          <p>Вы&nbsp;не&nbsp;найдёте лучшее соотношение цены и&nbsp;качества.</p>
+        <li class="benefits__item">
+          <h3 class="benefits__item-title">Лучшие цены</h3>
+          <p class="benefits__item-text">Вы&nbsp;не&nbsp;найдёте лучшее соотношение цены и&nbsp;качества.</p>
         </li>
-        <li>
-          <h3>Ручная работа</h3>
-          <p>Изделия, созданные настоящими мастерами.</p>
+        <li class="benefits__item">
+          <h3 class="benefits__item-title">Ручная работа</h3>
+          <p class="benefits__item-text">Изделия, созданные настоящими мастерами.</p>
         </li>
       </ul>
     </section>
 
-    <section>
-      <h2>Новые товары</h2>
-      <div>
-        <article>
-          <h3>The Dandy chair</h3>
-          <p>&pound;250</p>
+    <section class="products" id="products">
+      <h2 class="products__title">Новые товары</h2>
+
+      <div class="products__grid">
+        <article class="product-card">
+          <h3 class="product-card__title">The Dandy chair</h3>
+          <p class="product-card__price">£250</p>
         </article>
-        <article>
-          <h3>Rustic Vase Set</h3>
-          <p>&pound;155</p>
+        <article class="product-card">
+          <h3 class="product-card__title">Rustic Vase Set</h3>
+          <p class="product-card__price">£155</p>
         </article>
-        <article>
-          <h3>The Silky Vase</h3>
-          <p>&pound;125</p>
+        <article class="product-card">
+          <h3 class="product-card__title">The Silky Vase</h3>
+          <p class="product-card__price">£125</p>
         </article>
-        <article>
-          <h3>The Lucy Lamp</h3>
-          <p>&pound;399</p>
+        <article class="product-card">
+          <h3 class="product-card__title">The Lucy Lamp</h3>
+          <p class="product-card__price">£399</p>
         </article>
       </div>
-      <a href="#">Посмотреть коллекцию</a>
     </section>
 
-    <section>
-      <h2>Популярные товары</h2>
-      <article>
-        <h3>The Dandy chair</h3>
-        <p>&pound;250</p>
-      </article>
-      <article>
-        <h3>The Poplar suede sofa</h3>
-        <p>&pound;980</p>
-      </article>
-      <a href="#">Посмотреть коллекцию</a>
+    <section class="popular" id="popular">
+      <h2 class="popular__title">Популярные товары</h2>
+
+      <div class="popular__grid">
+        <article class="product-card">
+          <h3 class="product-card__title">The Dandy chair</h3>
+          <p class="product-card__price">£250</p>
+        </article>
+        <article class="product-card">
+          <h3 class="product-card__title">The Poplar suede sofa</h3>
+          <p class="product-card__price">£980</p>
+        </article>
+      </div>
     </section>
 
-    <section>
-      <h2>Присоединяйтесь к&nbsp;клубу</h2>
-      <p>Подпишитесь на&nbsp;рассылку и&nbsp;получайте эксклюзивные предложения.</p>
-      <form>
-        <input type="email" placeholder="your@email.com" required>
-        <button type="submit">Подписаться</button>
+    <section class="newsletter" id="newsletter">
+      <h2 class="newsletter__title">Присоединяйтесь к&nbsp;клубу</h2>
+      <p class="newsletter__text">Подпишитесь на&nbsp;рассылку и&nbsp;получайте эксклюзивные предложения.</p>
+
+      <form class="newsletter__form">
+        <input class="newsletter__input" type="email" placeholder="your@email.com" required>
+        <button class="button button--primary" type="submit">Подписаться</button>
       </form>
     </section>
 
-    <section>
-      <h2>От&nbsp;студии в&nbsp;Лондоне до&nbsp;мирового бренда</h2>
-      <p>
+    <section class="about" id="about">
+      <h2 class="about__title">От&nbsp;студии в&nbsp;Лондоне до&nbsp;мирового бренда</h2>
+      <p class="about__text">
         Когда мы&nbsp;создавали Avion, идея была простой&nbsp;&mdash; сделать качественную мебель доступной.
-        Ручная работа и&nbsp;любовь к&nbsp;дизайну сделали наш бутик в&nbsp;Челси центром интерьерного
-        сообщества Лондона.
+        Ручная работа и&nbsp;любовь к&nbsp;дизайну сделали наш бутик в&nbsp;Челси центром интерьерного сообщества Лондона.
       </p>
-      <a href="#">Связаться с&nbsp;нами</a>
+      <a href="#" class="button">Связаться с&nbsp;нами</a>
     </section>
 
   </main>
 
-  <footer>
-    <section>
-      <h2>Меню</h2>
-      <ul>
-        <li><a href="#">New arrivals</a></li>
-        <li><a href="#">Best sellers</a></li>
-        <li><a href="#">Recently viewed</a></li>
-        <li><a href="#">Popular this week</a></li>
-        <li><a href="#">All products</a></li>
-      </ul>
-    </section>
+  <footer class="footer">
+    <div class="footer__inner">
 
-    <section>
-      <h2>Категории</h2>
-      <ul>
-        <li>Crockery</li>
-        <li>Furniture</li>
-        <li>Homeware</li>
-        <li>Plant pots</li>
-        <li>Chairs</li>
-      </ul>
-    </section>
+      <section class="footer__section">
+        <h2 class="footer__title">Меню</h2>
+        <ul class="footer__list">
+          <li><a class="footer__link" href="#products">All products</a></li>
+          <li><a class="footer__link" href="#popular">Popular</a></li>
+          <li><a class="footer__link" href="#newsletter">Newsletter</a></li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Компания</h2>
-      <ul>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Vacancies</a></li>
-        <li><a href="#">Contact us</a></li>
-        <li><a href="#">Privacy</a></li>
-        <li><a href="#">Returns policy</a></li>
-      </ul>
-    </section>
+      <section class="footer__section">
+        <h2 class="footer__title">Компания</h2>
+        <ul class="footer__list">
+          <li><a class="footer__link" href="#about">About us</a></li>
+          <li><a class="footer__link" href="#">Vacancies</a></li>
+          <li><a class="footer__link" href="#">Contact</a></li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Подписка</h2>
-      <form>
-        <input type="email" placeholder="your@email.com" required>
-        <button type="submit">Sign up</button>
-      </form>
-    </section>
+    </div>
 
-    <p>&copy;&nbsp;2022 Avion LTD</p>
+    <p class="footer__copyright">©&nbsp;2022 Avion LTD</p>
   </footer>
 
 </body>
