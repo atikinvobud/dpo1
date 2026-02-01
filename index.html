@@ -6,31 +6,32 @@
   <title>Avion — мебель будущего</title>
   <link rel="icon" type="image/x-icon" href="assets/icons/Лого.png">
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 1024px)">
 </head>
 <body>
 
 <header class="header">
-  <div class="header__inner container">
+  <div class="container">
+    <div class="header__inner">
 
-    <h1 class="header__logo">Avion</h1>
+      <h1 class="header__logo">Avion</h1>
 
-    <input type="checkbox" id="nav-toggle" class="nav__toggle">
+      <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+        <span class="menu-toggle__line"></span>
+      </button>
 
-    <label for="nav-toggle" class="nav__burger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
+      <nav class="header__nav nav" id="mainNav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#products">Products</a></li>
+          <li class="nav__item"><a class="nav__link" href="#benefits">Benefits</a></li>
+          <li class="nav__item"><a class="nav__link" href="#popular">Popular</a></li>
+          <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+        </ul>
+      </nav>
 
-    <nav class="header__nav nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a class="nav__link" href="#products">Products</a></li>
-        <li class="nav__item"><a class="nav__link" href="#benefits">Benefits</a></li>
-        <li class="nav__item"><a class="nav__link" href="#popular">Popular</a></li>
-        <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
-      </ul>
-    </nav>
-
+    </div>
   </div>
 </header>
 
@@ -165,6 +166,8 @@
 
   <p class="footer__copyright">© 2022 Avion LTD</p>
 </footer>
+<button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
 
+<script src="scripts/menu.js"></script>
 </body>
 </html>
